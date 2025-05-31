@@ -8,6 +8,9 @@ jobs:
       - name: Checkout del repositorio
         uses: actions/checkout@v4
 
+      - name: Mostrar contenido del directorio
+        run: ls -laR
+
       - name: Hello world action step
         id: hello
         uses: ./ # Usa la acción local desde el mismo repo
